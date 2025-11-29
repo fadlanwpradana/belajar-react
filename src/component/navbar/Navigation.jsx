@@ -19,32 +19,32 @@ const Navigation = () => {
         <div>
           <ul class="navbar">
             <li>
-              <a href="" target="main" onClick={() => navigate("/style")}>
+              <a target="main" onClick={() => navigate("/style")}>
                 Style
               </a>
             </li>
             <li>
-              <a href="" target="main" onClick={() => navigate("/")}>
+              <a target="main" onClick={() => navigate("/")}>
                 Barbers
               </a>
             </li>
             <li>
-              <a href="" target="main" onClick={() => navigate("/")}>
+              <a target="main" onClick={() => navigate("/")}>
                 Price List
               </a>
             </li>
             <li>
-              <a href="" target="main" onClick={() => navigate("/")}>
+              <a target="main" onClick={() => navigate("/")}>
                 Booking
               </a>
             </li>
             <li>
-              <a href="" target="main" onClick={() => navigate("/contactus")}>
+              <a target="main" onClick={() => navigate("/contactus")}>
                 Contact Us
               </a>
             </li>
             <li>
-              <a href="" target="main" onClick={() => navigate("/")}>
+              <a target="main" onClick={() => navigate("/")}>
                 Our Merch
               </a>
             </li>

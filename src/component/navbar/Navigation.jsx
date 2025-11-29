@@ -39,20 +39,12 @@ const Navigation = () => {
               </a>
             </li>
             <li>
-              <a
-                href="contact_us.html"
-                target="main"
-                onClick={() => navigate("/")}
-              >
+              <a href="" target="main" onClick={() => navigate("/contactus")}>
                 Contact Us
               </a>
             </li>
             <li>
-              <a
-                href="purchasing.html"
-                target="main"
-                onClick={() => navigate("/")}
-              >
+              <a href="" target="main" onClick={() => navigate("/")}>
                 Our Merch
               </a>
             </li>

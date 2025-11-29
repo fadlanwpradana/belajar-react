@@ -54,7 +54,7 @@ const Navigation = () => {
               </a> */}
             </li>
             <li>
-              <Link className="nav-link" to="/contacus">
+              <Link className="nav-link" to="/contactus">
                 Contact Us
               </Link>
               {/* <a target="main" onClick={() => navigate("/contactus")}>

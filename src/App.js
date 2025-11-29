@@ -6,9 +6,7 @@ import Homepage from "./pages/homepage/homepage";
 import Style from "./pages/styling/style";
 import Pricelist from "./pages/pricelist/pricelist";
 import Barbers from "./pages/barbers/barbers";
-// import Booking from "./pages/booking/booking";
-
-// import Barbers from "./pages/barbers/barbers";
+import Booking from "./pages/booking/booking";
 
 function App() {
   return (
@@ -34,6 +32,7 @@ function App() {
           <Route path="/style" element={<Style />} />
           <Route path="/pricelist" element={<Pricelist />} />
           <Route path="/barber" element={<Barbers />} />
+          <Route path="/booking" element={<Booking />} />
 
           <Route path="/contactus" element={<ContactUs />} />
         </Routes>

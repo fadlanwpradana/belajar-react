@@ -19,7 +19,7 @@ const Barbers = () => {
           </div>
 
           <div class="barber-grid">
-            <ul>
+            <ol>
               <li>
                 <img src={Henry} alt="logo" />
                 <h3>Henry</h3>
@@ -45,7 +45,7 @@ const Barbers = () => {
                 <h3>Arsenius</h3>
                 <p>Buzz Cut & Undercut Master</p>
               </li>
-            </ul>
+            </ol>
           </div>
         </div>
       </div>

@@ -30,7 +30,7 @@ const Navigation = () => {
               </a> */}
             </li>
             <li>
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/barber">
                 barbers
               </Link>
               {/* <a target="main" onClick={() => navigate("/")}>

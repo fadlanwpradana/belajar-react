@@ -38,7 +38,7 @@ const Navigation = () => {
               </a> */}
             </li>
             <li>
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/pricelist">
                 Price List
               </Link>
               {/* <a target="main" onClick={() => navigate("/")}>
@@ -46,7 +46,7 @@ const Navigation = () => {
               </a> */}
             </li>
             <li>
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/booking">
                 Booking
               </Link>
               {/* <a target="main" onClick={() => navigate("/")}>
@@ -54,7 +54,7 @@ const Navigation = () => {
               </a> */}
             </li>
             <li>
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/contacus">
                 Contact Us
               </Link>
               {/* <a target="main" onClick={() => navigate("/contactus")}>

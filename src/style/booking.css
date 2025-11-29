@@ -1,0 +1,117 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f5f0;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.booking-form {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #3e2f23;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.booking-form button:hover {
+  background-color: #5a4433;
+}
+.barber-section {
+  margin: 20px 0;
+}
+
+.barber-section label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.barber-options {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.barber-options label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.barber-options input[type="radio"] {
+  accent-color: #007bff; /* Biru elegan */
+}
+.additional-service {
+  margin: 30px 0;
+}
+
+.additional-service > label {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-list label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.service-list input[type="checkbox"] {
+  accent-color: #007bff; /* Warna biru branding */
+  width: 18px;
+  height: 18px;
+}
+p {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}

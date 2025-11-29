@@ -1,0 +1,81 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f5f0;
+  color: #333;
+  /* margin: 0; */
+  padding: 20px;
+}
+
+.header-barber {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.header p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Barber Grid */
+.barber-grid ol {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 50vw;
+}
+
+.barber-grid li {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.barber-grid li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.barber-grid img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.barber-grid h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #222;
+}
+
+.barber-grid p {
+  margin-top: 0px;
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  .barber-grid ol {
+    grid-template-columns: 1fr;
+  }
+}

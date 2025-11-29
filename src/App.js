@@ -4,6 +4,10 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContactUs from "./pages/contactus/contactus";
 import Homepage from "./pages/homepage/homepage";
 import Style from "./pages/styling/style";
+import Pricelist from "./pages/pricelist/pricelist";
+// import Booking from "./pages/booking/booking";
+
+// import Barbers from "./pages/barbers/barbers";
 
 function App() {
   return (
@@ -27,6 +31,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/style" element={<Style />} />
+          <Route path="/pricelist" element={<Pricelist />} />
+          {/* <Route path="/booking" element={<Booking />} /> */}
+
           <Route path="/contactus" element={<ContactUs />} />
         </Routes>
       </BrowserRouter>

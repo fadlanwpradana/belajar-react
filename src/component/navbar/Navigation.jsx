@@ -1,52 +1,73 @@
 import React from "react";
 import logo from "../../assets/logoakun.png";
 import "../../style/navigation.css";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
-  const navigate = useNavigate();
+  //   const navigate = useNavigate();
 
   return (
     <>
       <div className="header">
         <div className="logo">
           <span>
-            <a href="" target="main" onClick={() => navigate("/")}>
+            <Link className="nav-link" to="/">
               <h1 class="Kingsman">KINGSMAN</h1>
-            </a>
+            </Link>
+            {/* <a href="" target="main" onClick={() => navigate("/")}>
+              <h1 class="Kingsman">KINGSMAN</h1>
+            </a> */}
           </span>
         </div>
         <div>
           <ul class="navbar">
             <li>
-              <a target="main" onClick={() => navigate("/style")}>
+              <Link className="nav-link" to="/style">
                 Style
-              </a>
+              </Link>
+              {/* <a target="main" onClick={() => navigate("/style")}>
+                Style
+              </a> */}
             </li>
             <li>
-              <a target="main" onClick={() => navigate("/")}>
+              <Link className="nav-link" to="/about">
+                barbers
+              </Link>
+              {/* <a target="main" onClick={() => navigate("/")}>
                 Barbers
-              </a>
+              </a> */}
             </li>
             <li>
-              <a target="main" onClick={() => navigate("/")}>
+              <Link className="nav-link" to="/about">
                 Price List
-              </a>
+              </Link>
+              {/* <a target="main" onClick={() => navigate("/")}>
+                Price List
+              </a> */}
             </li>
             <li>
-              <a target="main" onClick={() => navigate("/")}>
+              <Link className="nav-link" to="/about">
                 Booking
-              </a>
+              </Link>
+              {/* <a target="main" onClick={() => navigate("/")}>
+                Booking
+              </a> */}
             </li>
             <li>
-              <a target="main" onClick={() => navigate("/contactus")}>
+              <Link className="nav-link" to="/about">
                 Contact Us
-              </a>
+              </Link>
+              {/* <a target="main" onClick={() => navigate("/contactus")}>
+                Contact Us
+              </a> */}
             </li>
             <li>
-              <a target="main" onClick={() => navigate("/")}>
+              <Link className="nav-link" to="/about">
                 Our Merch
-              </a>
+              </Link>
+              {/* <a target="main" onClick={() => navigate("/")}>
+                Our Merch
+              </a> */}
             </li>
           </ul>
         </div>

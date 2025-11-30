@@ -62,7 +62,7 @@ const Navigation = () => {
               </a> */}
             </li>
             <li>
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/purchasing">
                 Our Merch
               </Link>
               {/* <a target="main" onClick={() => navigate("/")}>

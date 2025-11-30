@@ -7,6 +7,8 @@ import Style from "./pages/styling/style";
 import Pricelist from "./pages/pricelist/pricelist";
 import Barbers from "./pages/barbers/barbers";
 import Booking from "./pages/booking/booking";
+import Purchasing from "./pages/purchasing/purchasing";
+
 
 function App() {
   return (
@@ -33,8 +35,8 @@ function App() {
           <Route path="/pricelist" element={<Pricelist />} />
           <Route path="/barber" element={<Barbers />} />
           <Route path="/booking" element={<Booking />} />
-
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/purchasing" element={<Purchasing />} />
         </Routes>
       </BrowserRouter>
     </>

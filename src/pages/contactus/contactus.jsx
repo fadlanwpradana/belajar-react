@@ -5,7 +5,7 @@ import Navigation from "../../component/navbar/Navigation";
 const Contactus = () => {
   return (
     <>
-    <Navigation></Navigation>
+      <Navigation></Navigation>
       <div>
         <div class="intro">
           <h1>Contact Us</h1>
@@ -68,9 +68,7 @@ const Contactus = () => {
           </p>
           <p>
             📞 WhatsApp:
-            <a href="https://wa.me/6285165861879" target="_blank">
-              +62 851-6586-1879
-            </a>
+            <a href="https://wa.me/6285165861879">+62 851-6586-1879</a>
           </p>
           <p>✉️ Email: kingsmanbarbershop@gmail.com</p>
           {/* <a href="https://maps.app.goo.gl/y542xKtMk3YMgyx99"

@@ -22,27 +22,27 @@ const Barbers = () => {
             <ol>
               <li>
                 <img src={Henry} alt="logo" />
-                <h3>Henry</h3>
+                <h3>Kiel</h3>
                 <p>Classic & Executive Cuts Specialist</p>
               </li>
               <li>
                 <img src={Kounde} alt="logo" />
-                <h3>Bedjo</h3>
+                <h3>Ojan</h3>
                 <p>Fade & Pompadour Expert</p>
               </li>
               <li>
                 <img src={Yamal} alt="logo" />
-                <h3>Peri</h3>
+                <h3>Wildy</h3>
                 <p>Beard Styling & Hot Towel Shave</p>
               </li>
               <li>
                 <img src={Neymar} alt="logo" />
-                <h3>Iman</h3>
+                <h3>Fadlan</h3>
                 <p>Hair Spa & Scalp Treatment</p>
               </li>
               <li>
                 <img src={Olise} alt="logo" />
-                <h3>Arsenius</h3>
+                <h3>Madio</h3>
                 <p>Buzz Cut & Undercut Master</p>
               </li>
             </ol>

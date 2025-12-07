@@ -1,9 +1,43 @@
-import React from "react";
+import {React,useState} from "react";
 import { Link } from "react-router-dom";
 import Navigation from "../../component/navbar/Navigation";
 import "../../style/register.css";
+import { authService } from "../../service/authentication/authService";
+import Swal from "sweetalert2";
+
 
 const Signup = () => {
+  const [form, setForm] = useState({name: "" , email: "", password: "" });
+  
+    const handleChange = (e) =>
+      setForm({ ...form, [e.target.name]: e.target.value });
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+  
+      try {
+        await authService.register(form);
+        Swal.fire({
+          icon: "success",
+          title: "Success",
+          text: "Login successful!",
+          // timer: 1500,
+          showConfirmButton: false,
+        });
+      } catch (err) {
+        const errorMessage =
+          err?.response?.data?.message || err?.message || "Invalid login";
+  
+        Swal.fire({
+          icon: "error",
+          title: "Login Failed",
+          text: errorMessage,
+          showConfirmButton: false,
+        });
+      }
+    };
+  
+  
   return (
     <>
       <Navigation></Navigation>
@@ -12,13 +46,14 @@ const Signup = () => {
           <h1>Create Account</h1>
           <p>Join Kingsman and manage your appointments with ease</p>
 
-          <form class="signup-form" id="signupform">
+          <form class="signup-form" id="signupform" onSubmit={handleSubmit}>
             <label for="username">Username</label>
             <input
               type="text"
-              id="username"
-              name="username"
+              id="name"
+              name="name"
               placeholder="Username"
+              onChange={handleChange}
             />
 
             <label for="email">Email Address</label>
@@ -27,6 +62,7 @@ const Signup = () => {
               id="email"
               name="email"
               placeholder="user@example.com"
+              onChange={handleChange}
             />
 
             <label for="phone">Phone Number</label>
@@ -40,9 +76,10 @@ const Signup = () => {
             <label for="password1">Password</label>
             <input
               type="password"
-              id="password1"
-              name="password1"
+              id="password"
+              name="password"
               placeholder="Password must be min 8 characters"
+              onChange={handleChange}
             />
 
             <label for="password2">Repeat Password</label>

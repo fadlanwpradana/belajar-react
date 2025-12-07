@@ -7,7 +7,6 @@ import Swal from "sweetalert2";
 
 const Login = () => {
   const [form, setForm] = useState({ email: "", password: "" });
-  const [message, setMessage] = useState("");
 
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -16,7 +15,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await authService.login(form);
+      await authService.login(form);
       Swal.fire({
         icon: "success",
         title: "Success",
@@ -24,16 +23,16 @@ const Login = () => {
         // timer: 1500,
         showConfirmButton: false,
       });
-
-      setMessage("Login successful!");
     } catch (err) {
+      const errorMessage =
+        err?.response?.data?.message || err?.message || "Invalid login";
+
       Swal.fire({
         icon: "error",
         title: "Login Failed",
-        text: err.message || "Invalid login",
+        text: errorMessage,
+        showConfirmButton: false,
       });
-
-      setMessage(err.message || "Invalid login");
     }
   };
 

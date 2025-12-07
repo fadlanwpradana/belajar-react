@@ -8,7 +8,8 @@ import Pricelist from "./pages/pricelist/pricelist";
 import Barbers from "./pages/barbers/barbers";
 import Booking from "./pages/booking/booking";
 import Purchasing from "./pages/purchasing/purchasing";
-
+import Login from "./pages/sign in/login";
+import Signup from "./pages/sign up/signup";
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Signup />} />
+
           <Route path="/style" element={<Style />} />
           <Route path="/pricelist" element={<Pricelist />} />
           <Route path="/barber" element={<Barbers />} />

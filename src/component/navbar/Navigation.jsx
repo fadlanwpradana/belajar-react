@@ -72,10 +72,9 @@ const Navigation = () => {
           </ul>
         </div>
         <div class="profile-icon">
-          <a href="login.html" target="main">
-            {" "}
+          <Link className="nav-link" to="/Login">
             <img src={logo} alt="logo" className="accountimage" />
-          </a>
+          </Link>
         </div>
       </div>
     </>
